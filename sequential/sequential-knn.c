@@ -17,7 +17,8 @@ double dwalltime() {
 
 static inline void insertDistance(int *neighbours, double *min_distances, double distance, int neigh_idx, int num_neigh, int pos) {
     //Update min distances and neighbours
-    for (int i = num_neigh - 1; i > pos; i--) {
+    int i;
+    for (i = num_neigh - 1; i > pos; i--) {
         min_distances[i] = min_distances[i-1];
         neighbours[i] = neighbours[i-1];
     }
@@ -108,66 +109,7 @@ static inline void updateNeighboursColAx(int *neighbours, double *min_distances,
         }
     }
 }
-/*static inline void updateNeighbours(int *neighbours, double *min_distances, int num_neigh, double *distances, int num_distances, int *points_idx){
-    int left_limit, right_limit, middle;
-    int i, j, k;
-    bool found;
 
-    for (i=0; i < num_distances; i++) {
-        left_limit = 0;
-        right_limit = num_neigh - 1;
-        middle = (int) (left_limit + right_limit)/2;
-        found = false;
-
-        // Binary search for position
-        while((left_limit < right_limit) && !found) {
-            if (min_distances[middle] < distances[i]) {
-                left_limit = middle + 1;
-                middle = (middle + right_limit) / 2;
-            }
-            else if (min_distances[middle] > distances[i]) {
-                right_limit = middle - 1;
-                middle = (middle + left_limit) / 2;
-            }
-            else
-                found = true;
-        }
-
-        // Number should be added
-        if (left_limit == right_limit){
-            if (min_distances[middle] > distances[i]) {
-                insertDistance(neighbours, min_distances, distances[i], points_idx[i], num_neigh, middle);
-            }
-            else if (min_distances[middle] <= distances[i] && middle != num_neigh - 1) {
-                k = middle;
-                while (k < num_neigh && min_distances[k] <= distances[i])
-                    k++;
-                if (min_distances[k] > distances[i]) {
-                    insertDistance(neighbours, min_distances, distances[i], points_idx[i], num_neigh, k);
-                }
-            }
-        }
-        else if (left_limit > right_limit) {
-            k = middle;
-            while (k < num_neigh && min_distances[k] <= distances[i])
-                k++;
-            if (min_distances[k] > distances[i]) {
-                insertDistance(neighbours, min_distances, distances[i], points_idx[i], num_neigh, k);
-            }
-        }
-        else if (middle != num_neigh - 1){
-            insertDistance(neighbours, min_distances, distances[i], points_idx[i], num_neigh, middle);
-        }
-
-        *//*printf("Mins: [");
-        for (j=0; j<10; j++) {
-            printf("%f, ", min_distances[j]);
-        }
-        printf("]");
-        printf("\n");*//*
-
-    }
-}*/
 
 static inline void computeDistances(double *points_a, double *points_b, double *distances, int num_points, bool against_self) {
     int i, j, steps;
@@ -190,7 +132,8 @@ static inline void computeDistances(double *points_a, double *points_b, double *
 }
 
 void generate_points(int numPoints, double *points, int limit) {
-    for (int i = 0; i < 3*numPoints; i++) {
+    int i;
+    for (i = 0; i < 3*numPoints; i++) {
         int num = rand();
         if (num == 0) {
             points[i] = 0;

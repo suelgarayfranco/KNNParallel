@@ -1,0 +1,89 @@
+1024 ========================================= 
+
+(N=1024) (K=5) (BS=64) (Blocks:16)	Total time=0.144833
+(N=1024) (K=5) (BS=128) (Blocks:8)	Total time=0.095559
+(N=1024) (K=5) (BS=256) (Blocks:4)	Total time=0.068294
+(N=1024) (K=5) (BS=512) (Blocks:2)	Total time=0.073238
+(N=1024) (K=5) (BS=1024) (Blocks:1)	Total time=0.076709
+
+
+
+2048 ========================================= 
+
+(N=2048) (K=5) (BS=64) (Blocks:32)	Total time=0.266021
+(N=2048) (K=5) (BS=128) (Blocks:16)	Total time=0.265431
+(N=2048) (K=5) (BS=256) (Blocks:8)	Total time=0.268965
+(N=2048) (K=5) (BS=512) (Blocks:4)	Total time=0.287682
+(N=2048) (K=5) (BS=1024) (Blocks:2)	Total time=0.294498
+(N=2048) (K=5) (BS=2048) (Blocks:1)	Total time=0.379782
+
+
+
+4096 ========================================= 
+
+(N=4096) (K=5) (BS=64) (Blocks:64)	Total time=1.058604
+(N=4096) (K=5) (BS=128) (Blocks:32)	Total time=1.057402
+(N=4096) (K=5) (BS=256) (Blocks:16)	Total time=1.067375
+(N=4096) (K=5) (BS=512) (Blocks:8)	Total time=1.139982
+(N=4096) (K=5) (BS=1024) (Blocks:4)	Total time=1.168287
+(N=4096) (K=5) (BS=2048) (Blocks:2)	Total time=1.529400
+(N=4096) (K=5) (BS=4096) (Blocks:1)	Total time=1.635036
+
+
+
+8192 ========================================= 
+
+(N=8192) (K=5) (BS=64) (Blocks:128)	Total time=4.221436
+(N=8192) (K=5) (BS=128) (Blocks:64)	Total time=4.182721
+(N=8192) (K=5) (BS=256) (Blocks:32)	Total time=4.254787
+(N=8192) (K=5) (BS=512) (Blocks:16)	Total time=4.573085
+(N=8192) (K=5) (BS=1024) (Blocks:8)	Total time=4.649471
+(N=8192) (K=5) (BS=2048) (Blocks:4)	Total time=6.114315
+(N=8192) (K=5) (BS=4096) (Blocks:2)	Total time=6.378814
+(N=8192) (K=5) (BS=8192) (Blocks:1)	Total time=6.549271
+
+
+
+16384 ========================================= 
+
+(N=16384) (K=5) (BS=64) (Blocks:256)	Total time=16.916426
+(N=16384) (K=5) (BS=128) (Blocks:128)	Total time=16.835872
+(N=16384) (K=5) (BS=256) (Blocks:64)	Total time=17.031793
+(N=16384) (K=5) (BS=512) (Blocks:32)	Total time=18.327024
+(N=16384) (K=5) (BS=1024) (Blocks:16)	Total time=18.615069
+(N=16384) (K=5) (BS=2048) (Blocks:8)	Total time=24.598303
+(N=16384) (K=5) (BS=4096) (Blocks:4)	Total time=25.606749
+(N=16384) (K=5) (BS=8192) (Blocks:2)	Total time=25.856093
+(N=16384) (K=5) (BS=16384) (Blocks:1)	Total time=25.763252
+
+
+
+32768 ========================================= 
+
+(N=32768) (K=5) (BS=64) (Blocks:512)	Total time=67.674459
+(N=32768) (K=5) (BS=128) (Blocks:256)	Total time=67.388521
+(N=32768) (K=5) (BS=256) (Blocks:128)	Total time=68.041354
+(N=32768) (K=5) (BS=512) (Blocks:64)	Total time=73.579584
+(N=32768) (K=5) (BS=1024) (Blocks:32)	Total time=74.572932
+(N=32768) (K=5) (BS=2048) (Blocks:16)	Total time=98.383764
+(N=32768) (K=5) (BS=4096) (Blocks:8)	Total time=102.056315
+(N=32768) (K=5) (BS=8192) (Blocks:4)	Total time=103.057080
+(N=32768) (K=5) (BS=16384) (Blocks:2)	Total time=101.519197
+(N=32768) (K=5) (BS=32768) (Blocks:1)	Total time=114.459748
+
+
+
+65536 ========================================= 
+
+(N=65536) (K=5) (BS=64) (Blocks:1024)	Total time=268.500099
+(N=65536) (K=5) (BS=128) (Blocks:512)	Total time=269.372241
+(N=65536) (K=5) (BS=256) (Blocks:256)	Total time=270.537770
+(N=65536) (K=5) (BS=512) (Blocks:128)	Total time=290.518755
+(N=65536) (K=5) (BS=1024) (Blocks:64)	Total time=297.986747
+(N=65536) (K=5) (BS=2048) (Blocks:32)	Total time=394.392871
+(N=65536) (K=5) (BS=4096) (Blocks:16)	Total time=405.422629
+(N=65536) (K=5) (BS=8192) (Blocks:8)	Total time=411.562569
+(N=65536) (K=5) (BS=16384) (Blocks:4)	Total time=402.128335
+(N=65536) (K=5) (BS=32768) (Blocks:2)	Total time=427.199609
+
+
